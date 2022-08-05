@@ -1,0 +1,40 @@
+extends base.pug
+block scripts 
+    script(src="/static/index.js")
+block style 
+    style 
+        include ../static/style.css      
+block content  
+    section#introsection        
+        div Welcome to Gautam Dance Academy
+        div.small Eat Sleep Dance Repeat   
+    section#missionSection    
+        h2 Our Mission 
+        div.card
+            h3 Dance Perfection 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/bg3.jpg")
+                div.card-content        
+                    p This is the best dance academy in the universe
+        div.card
+            h3 Danace the way you like 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/bg5.png")
+                div.card-content        
+                    p This is the best dance academy in the universe
+        div.card
+            h3 Expert Teaching 
+            div.card-box
+                div.card-img
+                    img(src="/static/img/bg8.jpg")
+                div.card-content        
+                    p This is the best dance academy in the universe
+    section#sponsorsSection    
+        h2 Our sponsors
+        div#sponsors
+            img(src="/static/img/logo1.jpg", alt="sponsor Image", class="spImage")
+            img(src="/static/img/lg2.png", alt="sponsor Image", class="spImage")
+            img(src="/static/img/lg3.png", alt="sponsor Image", class="spImage")
+            img(src="/static/img/lg4.png", alt="sponsor Image", class="spImage")
